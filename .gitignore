@@ -1,0 +1,24 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+
+# Model checkpoints & cache
+.cache/
+*.pt
+*.bin
+*.onnx
+*.safetensors
+
+# Logs & temp files
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

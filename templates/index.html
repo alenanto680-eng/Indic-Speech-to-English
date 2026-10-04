@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en" data-theme="light"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Indian speech to English</title>
+<link rel="stylesheet" href="/static/css/style.css"></head><body>
+
+<section class="card left">
+  <div class="head"><h1>Speech input</h1>
+    <div class="theme" id="theme"><span>☀</span><div class="sw"><i></i></div><span>☾</span></div></div>
+
+  <label class="t">Language you speak</label>
+  <div class="dd">
+    <div class="sel" id="sel"><div class="flag"></div>
+      <div class="nm"><b id="lname">Malayalam</b><small id="lnat">മലയാളം</small></div><span>⌄</span></div>
+    <div class="menu" id="menu"></div>
+  </div>
+
+  <label class="t">Speed</label>
+  <div class="seg" id="seg">
+    <button class="on" data-v="fast">Fast</button>
+    <button data-v="accurate">More Accurate</button>
+  </div>
+
+  <div class="mic">
+    <div class="row">
+      <div class="bars" id="bl"></div>
+      <button class="mbtn" id="mic">
+        <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v4M8 22h8"/></svg>
+      </button>
+      <div class="bars" id="br"></div>
+    </div>
+    <div class="state"><i></i><span id="state">Tap to start speaking</span></div>
+  </div>
+</section>
+
+<section class="card right">
+  <h1>English</h1>
+  <div class="out en" id="en"><span class="ph">Speak in your language. The English text appears here as you talk.</span></div>
+  <div class="sec">Original text</div>
+  <div class="out nat" id="nat"><span class="ph">What the speech model heard.</span></div>
+  <div class="foot">
+    <div class="tm"><small>Last chunk processed in:</small><b id="time">0.00 s</b></div>
+    <div class="btns"><button id="clear">🗑 Clear</button><button class="cp" id="copy">Copy English</button></div>
+  </div>
+</section>
+
+<script src="/static/js/app.js"></script></body></html>
